@@ -1,0 +1,22 @@
+server:
+  port: 8083
+
+spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411
+  application:
+    name: STUDENTS-APP
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  data:
+    rest:
+      base-path: "/api"
+    mongodb:
+      #authentication-database: admin
+      #username:
+      #password:
+      database: StudentsDb
+      host: 127.0.0.1
+      port: 27017
